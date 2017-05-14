@@ -7,7 +7,7 @@ modules used
 
 Installation
 * cd express_crud && npm install
-* create db (express_crud)
+* create mysl db (express_crud)
 * nodemon app
 * visit [localhost:3000](http://localhost:3000)
 
