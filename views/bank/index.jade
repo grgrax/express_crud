@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  a(href="bank/add", type="button", class="btn btn-default") Add
+  h2= title
+  table.table.table-striped
+   thead
+    tr
+     th Name
+     th Url
+     th Action
+    for bank in banks
+     tr
+      td=bank.name
+      td=bank.url
+      td
+       a(href="bank/edit/"+bank.id, type="button", class="btn btn-primary") Edit 
+       &nbsp;
+       a(href="bank/delete/"+bank.id, type="button", class="btn btn-danger")  Delete
+    else
+     tr
+      td No data
+

@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  a(href="/bank", class="btn btn-default") Banks
+  h2= title
+  form(action="add", method="post")
+   .form-group
+    label Name
+    input(name="name", class="form-control")
+   .form-group
+    label Url
+    input(name="url", class="form-control")
+   input(name="submit", type="submit", class="btn btn-default")
+
+  
